@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: #164A41;
+}
+.nav .logo{
+    margin: 5px 30px;
+}
+.nav .logo img{
+    height: 85px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    margin: 10px;
+    list-style: none;
+}
+.nav ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F1B24A;
+    margin: 5px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    background-color: #F1B24A;
+    color: #ffffff;
+}
+
+/* Home Page */
+#home{
+    background-color: #4D774E;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#home .photo img{
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #F1B24A;
+}
+#home .welcome{
+    font-family: 'Alfa Slab One', cursive;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+#home .welcome h1{
+    text-shadow: 4px 4px 6px #F1B24A;
+    font-size: 7rem;
+}
+#bout{
+    background-color: #9DC88D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bout .con{
+    width: 600px;
+}
+#bout h1{
+    color: #164A41;
+}
+#bout .con p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #ffffff;
+    font-size: 1.91rem;
+    text-align: center;
+    margin: 20px;
+}
+
+/* ABOUT ZORBING */
+#maz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D774E;
+    padding: 20px;
+}
+
+#maz .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #9DC88D;
+}
+#maz .content img{
+    border-radius: 5px;
+    width: 600px;
+    margin: 10px;
+}
+#maz .content p{
+    color: #ffffff;
+    width: 600px;
+    font-size: 1.3rem;
+    margin: 10px;
+    text-align: justify;
+}
+#maz h1{
+    color: #F1B24A;
+}
+#yt{
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #164A41;
+}
+#video{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#video .vid{
+    display: flex;
+    flex-direction: column;
+}
+
+#video .vid iframe{
+    width:560px; 
+    height:315px;
+    margin: 5px;
+}
+.tq{
+    background-color: black;
+}
+.tq p{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prime{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px){
+    :root{
+        font-size: 13px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    #home .photo img{
+        width: 500px;
+    }
+    #bout .con{
+        width: 500px;
+    }
+    #maz .content img{
+        width: 500px;
+    }
+    #maz .content p{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .nav .logo img{
+        height: 75px;
+    }
+    #home .welcome h1{
+        font-size: 5rem;
+    }
+    #home .photo img{
+        width: 350px;
+    }
+    #bout .con{
+        width: 300px;
+    }
+    #maz .content img{
+        width: 350px;
+    }
+    #maz .content p{
+        width: 350px;
+    }
+    #bout .con p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .prime{
+        font-size: 2rem;
+    }
+    #video .vid iframe{
+        width:350px; 
+        height:200px;
+    }
+}
+@media only screen and (max-width: 400px){
+    :root{
+        font-size: 12px;
+    }
+    .nav .logo img{
+        height: 55px;
+    }
+    .nav ul li{
+        margin: 5px;
+    }
+    .nav ul li a{
+        padding: 3px 7px;
+    }
+    #home .welcome h1{
+        font-size: 4rem;
+    }
+    #home .photo img{
+        width: 310px;
+    }
+    #bout .con{
+        width: 300px;
+    }
+    #maz .content img{
+        width: 250px;
+    }
+    #maz .content p{
+        width: 250px;
+    }
+    .prime{
+        font-size: 1.5rem;
+    }
+    #video .vid iframe{
+        width:300px; 
+        height:190px;
+    }
+
+}
